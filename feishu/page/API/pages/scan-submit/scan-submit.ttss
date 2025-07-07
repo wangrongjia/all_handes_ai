@@ -1,0 +1,32 @@
+.page-section {
+  margin-bottom: 20px;
+}
+
+.page-section-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.page-section-content {
+  padding: 0 15px;
+}
+
+.result-box {
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  min-height: 60px;
+}
+
+.result-text {
+  word-break: break-all;
+  font-size: 14px;
+}
+
+.btn-area {
+  margin-top: 30px;
+  padding: 0 15px;
+}

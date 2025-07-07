@@ -157,6 +157,9 @@ Page({
           }, {
             zh: iAPI.scan_code,
             url: 'scan-code/scan-code'
+          }, {
+            zh: "二维码扫描与提交",
+            url: 'scan-submit/scan-submit'
           },
           {
             zh: iAPI.clipboard,

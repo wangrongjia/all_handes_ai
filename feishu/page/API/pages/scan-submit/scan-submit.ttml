@@ -1,0 +1,33 @@
+<import src="../../../common/head.ttml"/>
+<import src="../../../common/foot.ttml"/>
+
+<view class="container">
+  <template is="head" data="{{title: title}}"/>
+
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-section-title">{{scan_result}}</view>
+      <view class="page-section-content">
+        <view class="result-box">
+          <text class="result-text">{{scanResult || 'No data yet'}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section">
+      <view class="page-section-title">{{submit_result}}</view>
+      <view class="page-section-content">
+        <view class="result-box">
+          <text class="result-text">{{submitResult || 'Not submitted yet'}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <button type="primary" bindtap="scanCode">{{scan_button}}</button>
+      <button type="primary" bindtap="submitToOA" loading="{{isSubmitting}}" style="margin-top: 20px;">{{submit_button}}</button>
+    </view>
+  </view>
+
+  <template is="foot"/>
+</view>

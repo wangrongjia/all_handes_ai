@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/API/pages/scan-submit/scan-submit",
     "page/component/index",
     "page/component/pages/view/view",
     "page/component/pages/scroll-view/scroll-view",
@@ -80,7 +81,7 @@
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Component Sample",
+    "navigationBarTitleText": "二维码扫描与提交",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },

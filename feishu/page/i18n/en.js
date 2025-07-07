@@ -473,6 +473,18 @@ const en = {
         "scan_result": "scan code result",
         "scan": "scan"
     },
+    "scan_submit": {
+        "title": "QR Code Scanner & Submitter",
+        "scan_button": "Scan QR Code",
+        "submit_button": "Submit to OA",
+        "scan_result": "Scan Result",
+        "submit_result": "Submit Result",
+        "scan_success": "Scan successful",
+        "scan_fail": "Scan failed",
+        "submit_success": "Submit successful",
+        "submit_fail": "Submit failed",
+        "no_data": "No data to submit"
+    },
     //set-navigation-bar-title
     "set_navigation_bar_title": {
         "page_title": "page title",
