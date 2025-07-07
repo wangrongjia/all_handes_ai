@@ -1,0 +1,16 @@
+.page-body image {
+  width: 600rpx;
+  height: 600rpx;
+  margin: 0 75rpx;
+}
+.video-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.progress-box{
+  display: flex;
+  height: 50rpx;
+  margin-bottom: 60rpx;
+}

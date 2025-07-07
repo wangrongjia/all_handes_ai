@@ -1,0 +1,46 @@
+<import src="../../../common/head.ttml" />
+<import src="../../../common/foot.ttml" />
+
+<view class="container">
+  <template is="head" data="{{title: 'saveFile'}}"/>
+
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-body-info">
+        <block tt:if="{{tempFilePath != ''}}">
+          <image src="{{tempFilePath}}" class="image" mode="aspectFit"></image>
+        </block>
+        <block tt:if="{{tempFilePath === '' && savedFilePath != ''}}">
+          <image src="{{savedFilePath}}" class="image" mode="aspectFit"></image>
+        </block>
+        <block tt:if="{{tempFilePath === '' && savedFilePath === ''}}">
+          <view class="image-plus image-plus-nb" bindtap="chooseImage">
+            <view class="image-plus-horizontal"></view>
+            <view class="image-plus-vertical"></view>
+          </view>
+          <view class="image-plus-text">{{select_a_file}}</view>
+        </block>
+      </view>
+      <view class="btn-area">
+        <button type="primary" bindtap="saveFile">{{save_file}}</button>
+        <button bindtap="clear">{{delete_file}}</button>
+         <button bindtap="openDocument">{{open_file}}</button>
+      </view>
+    </view>
+    <view class="split"></view>
+    <view class="page-section">
+      <view class="btn-area">
+        <button bindtap="filePickerLark">{{select_attachment_lark}}</button>
+        <button bindtap="filePickerSystem">{{select_attachment_system}}</button>
+      <view></view>
+      <view>{{attachment_list}}</view>
+      <view tt:for="{{fileList}}">
+        <text>{{item.name}}</text>
+      </view>
+
+  </view>
+
+  <modal title="{{dialog.title}}" hidden="{{dialog.hidden}}" no-cancel bindconfirm="confirm">{{dialog.content}}</modal>
+
+  <template is="foot" />
+</view>

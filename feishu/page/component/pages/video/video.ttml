@@ -1,0 +1,36 @@
+<import src="../../../common/head.ttml" />
+<import src="../../../common/foot.ttml" />
+
+<view class="container">
+  <template is="head" data="{{title: 'video'}}"/>
+
+  <view class="page-body">
+    <view class="page-section tc">
+      <video id="myVideo"
+        src="https://sf1-cdn-tos.huoshanstatic.com/obj/ttfe/tma/test.mp4" 
+        binderror="videoErrorCallback"
+        danmu-list="{{danmuList}}" 
+        enable-danmu danmu-btn controls
+        direction=90>
+        </video>
+      <view class="weui-cells" tt:if="{{ false }}">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">{{barrage_content}}</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder={{barrage_placeholder}} />
+          </view>
+        </view>
+      </view>
+
+      <view class="btn-area" tt:if="{{ false }}">
+        <button bindtap="bindSendDanmu" class="page-body-button" type="primary" formType="submit">{{send_barrage}}</button>
+        <button bindtap="bindPlay" class="page-body-button" type="primary">{{play}}</button>
+        <button bindtap="bindPause" class="page-body-button" type="primary">{{pause}}</button>
+      </view>
+    </view>
+  </view>
+
+  <template is="foot" />
+</view>

@@ -1,0 +1,18 @@
+<import src="../../../common/head.ttml"/>
+<import src="../../../common/foot.ttml"/>
+
+<view class="container">
+    <editor
+        id="editor"
+        placeholder="{{placeholder}}"
+        contents="{{contents}}"
+        read-only="{{readOnly}}"
+        plugins="{{plugins}}"
+        placeholderStyle="{{placeholderStyle}}"
+        bindready="onEditorReady"
+        bindmentionselect = "onMentionSelect"
+        bindmentionclick = "onMentionClick"
+        bindinput="onEitorInputValueChange"
+        bindinsertimages="onInsertImages">
+    </editor>
+</view>

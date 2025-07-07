@@ -1,0 +1,13 @@
+<import src="../../../common/head.ttml" />
+<import src="../../../common/foot.ttml" />
+
+
+<view class="container">
+  <template is="head" data="{{title: 'web-view'}}"/>
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <web-view src="https://open.feishu.cn/m/" bindload="loadDone" binderror = "errorLoad" progressbar-color="#CC3333"></web-view>
+    </view>
+  </view>
+  <template is="foot" />
+</view>

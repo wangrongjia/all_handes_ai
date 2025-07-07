@@ -1,0 +1,23 @@
+<import src="../../../common/head.ttml"/>
+<import src="../../../common/foot.ttml"/>
+
+<view class="container">
+  <template is="head" data="{{title: 'image'}}"/>
+
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">{{local_image}}</view>
+      <view class="page-section-ctn">
+        <image style="width:20px; height: 20px;" src="../../resources/pic/logo.png" mode="bottom right"/>
+      </view>
+    </view>
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">{{net_image}}</view>
+      <view class="page-section-ctn">
+        <image class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sunset_2007-1.jpg/800px-Sunset_2007-1.jpg"/>
+      </view>
+    </view>
+  </view>
+
+  <template is="foot"/>
+</view>

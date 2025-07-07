@@ -1,0 +1,116 @@
+<import src="../../../common/head.ttml"/>
+<import src="../../../common/foot.ttml"/>
+
+<view class="container">
+  <template is="head" data="{{title: 'icon'}}"/>
+
+  <view class="icon-box">
+    <icon class="icon-box-img" type="success" size="93"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{success}}</view>
+      <view class="icon-box-desc">{{success_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="info" size="93"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{prompt}}</view>
+      <view class="icon-box-desc">{{prompt_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="warn" size="93" color="#C9C9C9"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{normal_warning}}</view>
+      <view class="icon-box-desc">{{normal_warning_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="warn" size="93"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{strong_warning}}</view>
+      <view class="icon-box-desc">{{strong_warning_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="waiting" size="93"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{wait}}</view>
+      <view class="icon-box-desc">{{wait_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="success" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{mulit_icon_selected}}</view>
+      <view class="icon-box-desc">{{mulit_icon_selected_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="clear" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{mulit_icon_unselected}}</view>
+      <view class="icon-box-desc">{{mulit_icon_selected_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="warn" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{error_message}}</view>
+      <view class="icon-box-desc">{{error_message_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="success_no_circle" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{single_icon_selected}}</view>
+      <view class="icon-box-desc">{{single_icon_unselected}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="download" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{download}}</view>
+      <view class="icon-box-desc">{{download_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="info" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{form_prompt}}</view>
+      <view class="icon-box-desc">{{form_prompt_tip}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="cancel" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{stop}}</view>
+      <view class="icon-box-desc">{{form_stop}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="search" size="14"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">{{search}}</view>
+      <view class="icon-box-desc">{{serach_tip}}</view>
+    </view>
+  </view>
+
+  <template is="foot" />
+</view>
