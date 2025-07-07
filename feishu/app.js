@@ -35,6 +35,11 @@ App({
   },
   globalData: {
     hasLogin: false,
-    openid: null
+    openid: null,
+    bitable: {
+      appToken: 'YOUR_BITABLE_APP_TOKEN',
+      tableId: 'YOUR_TABLE_ID'
+    },
+    oaApi: 'YOUR_OA_API_ENDPOINT'
   }
 })

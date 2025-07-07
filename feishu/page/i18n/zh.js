@@ -474,6 +474,18 @@ const zh = {
         "scan_result": "扫码结果",
         "scan": "扫一扫"
     },
+    "scan_submit": {
+        "title": "二维码扫描与提交",
+        "scan_button": "扫描二维码",
+        "submit_button": "提交到OA",
+        "scan_result": "扫描结果",
+        "submit_result": "提交结果",
+        "scan_success": "扫描成功",
+        "scan_fail": "扫描失败",
+        "submit_success": "提交成功",
+        "submit_fail": "提交失败",
+        "no_data": "没有数据可提交"
+    },
     //set-navigation-bar-title
     "set_navigation_bar_title": {
         "page_title": "页面标题",
