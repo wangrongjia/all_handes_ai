@@ -1,0 +1,77 @@
+# 从零开始开发一个 MCP Server！ - V2EX
+
+**原始链接**: [https://www.v2ex.com/t/1122153#reply2](https://www.v2ex.com/t/1122153#reply2)  
+**来源网站**: www.v2ex.com  
+**提取时间**: 2025-07-29 01:18:10
+
+---
+
+最近，在 AI 开发领域，MCP (Model Context Protocol) 是越来越火了！
+
+前几天，我我也开发了一款 Code Runner MCP Server：
+
+[Code Runner MCP Server ，支持运行 39 种编程语言！](<https://www.v2ex.com/t/1120022>)
+
+今天，我就把我开发 MCP Server 的经验和遇到的一些坑，分享给大家！
+
+以 Node.js 为例，从零开始开发一个 MCP Server ！
+
+## 安装 Node.js
+
+从 <https://nodejs.org/en> 安装 LTS 版的 Node.js 即可。
+
+## 安装 Scaffolding Tool
+
+在命令行运行下面命令，安装 [Yeoman Generator for MCP Server](<https://github.com/formulahendry/generator-mcp>)：
+[code] 
+    npm install -g yo generator-mcp
+    
+[/code]
+
+## 创建 MCP Server 项目
+
+在命令行运行下面命令，创建 MCP Server 项目：
+[code] 
+    yo mcp -n 'Weather MCP Server'
+    
+[/code]
+
+## 实现代码逻辑
+
+generator-mcp 已经把全部需要的代码框架和依赖都生成和安装了。
+
+你可以按需修改代码，或者利用已有的代码直接进行调试和测试。
+
+## 调试/测试
+
+generator-mcp 已经配置好了 VS Code 的调试配置文件：launch.json 和 tasks.json
+
+在 VS Code 中打开项目，按 F5 就能一键启动调试！
+
+稍等片刻，浏览器自动打开 MCP Inspector 后，就能进行测试了！
+
+![](https://img2024.cnblogs.com/blog/1857417/202503/1857417-20250325194403121-217218706.png)
+
+## 运行
+
+此外，你还可以在其他支持 MCP 的客户端中，测试你的 MCP Server 。
+
+generator-mcp 已经默认创建了 .vscode\mcp.json 文件，这个文件定义了在 VS Code 运行的 MCP Server 。
+
+![](https://img2024.cnblogs.com/blog/1857417/202503/1857417-20250325194607424-440835697.png)
+
+_注：需从<https://code.visualstudio.com/insiders/> 下载最新版本的 VS Code Insiders 。_
+
+安装好最新的 VS Code Insiders 版本，点击 “start” 按钮，就能在 VS Code Insiders 的 Agent Mode 调用你的 MCP Server 啦！
+
+![](https://img2024.cnblogs.com/blog/1857417/202503/1857417-20250325194739543-966714087.png)
+
+![](https://img2024.cnblogs.com/blog/1857417/202503/1857417-20250325194827930-1404102978.jpg)
+
+## 发布
+
+测试完成后，就可以把你的 MCP Server 发布到 npm registry 或者 Docker Hub 了！
+
+关于 Dockerfile 怎么写，以及如何在 VS Code 、Claude Desktop 等客户端配置 MCP Server ，还有 npx 可能在 Windows 上运行失败的问题，都可以参考 Code Runner MCP Server 的 README 和源代码，完全开源：
+
+<https://github.com/formulahendry/mcp-server-code-runner>
